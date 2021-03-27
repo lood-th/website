@@ -3,8 +3,8 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Russo One', sans-serif;
-    color: transparent;
-    text-shadow: 0 0 3.5px #ffffff; 
+    color: #ffffff;
+   /*  text-shadow: 0 0 3.5px #ffffff;  */
      background-image: linear-gradient(to bottom right,#272829, #07192b); 
     background-repeat: no-repeat;
     overflow: hidden;
@@ -12,22 +12,28 @@ body{
 
 h1{
     text-transform: uppercase; 
+    width:fit-content;
 }
 .container{
-    margin: 0 auto; 
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   position: absolute; 
+
       transform: translateY(-50%);  
-     left: 50%;
+     left: 50%; 
       transform: translateX(-50%);  
+      height:100%;
      width: -webkit-fit-content;
     width: -moz-fit-content; 
     width: fit-content;
+    max-width: 700px;
 }
 
-.sub-container{
-    height: 100%;
+.tags{
+   /*  height: 100%; */
+    max-width: 341px;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +41,15 @@ h1{
     text-align: center;
 }
 
+.info{
+    font-family: 'Helvetica';
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 50px;
+}
+
  #status-info{
+     display: none;
      color: #ffffff;
      text-shadow: none;
     margin: auto;
