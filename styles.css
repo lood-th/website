@@ -90,3 +90,23 @@ h1{
     width: fit-content;
     margin-top:50px; 
 } 
+
+@media only screen and (max-width: 500px) {
+
+    .container{
+        position: static;
+        transform:none;
+        width: content-box;
+        padding: 0 25px;
+    }
+
+    .tags{
+         text-align: left;
+     }
+
+    .email-button{
+        position: static;
+        border-radius: 0;
+        border-radius: 30px;
+    }
+}
