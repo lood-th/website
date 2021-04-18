@@ -7,4 +7,3 @@ const makeAppear = () => {
 }
 
 makeAppear();
-1440
