@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   position: relative;
   width: 100vw;
@@ -21,7 +29,7 @@ h1 {
 
 .vis {
   visibility: visible;
-  animation: fadeIn linear 300ms;
+  animation: fadeIn linear 100ms;
 }
 
 @keyframes fadeIn {
@@ -37,7 +45,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  transform: translateY(-50%);
+  /* padding-left: 50px; */
+  /*       transform: translateY(-50%); */
   left: 50%;
   transform: translateX(-50%);
   height: 100%;
@@ -59,9 +68,9 @@ h1 {
 
 .info {
   font-family: "Helvetica";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .email-button {
@@ -71,7 +80,7 @@ h1 {
   max-width: max-content;
   background-color: #2ade91;
   padding: 20px;
-  border-radius: 25% 50%;
+  border-radius: 25px;
 }
 
 #status-info {
@@ -102,10 +111,17 @@ h1 {
     text-align: left;
   }
 
+  .info {
+    font-family: "Helvetica";
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
   .email-button {
+    width: 100vw;
     position: static;
     border-radius: 0;
-    border-radius: 30px;
   }
 }
 
