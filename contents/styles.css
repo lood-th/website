@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 *, *:before, *:after {
@@ -111,6 +111,11 @@ p {
 }
 
 @media only screen and (max-width: 500px) {
+  body {
+    height: 100%;
+    overflow: scroll;
+  }
+
   .container {
     position: static;
     transform: none;
@@ -129,14 +134,13 @@ p {
 
   .info {
     font-family: "Helvetica";
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 25px;
     margin-top: 30px;
   }
 
   .email-button {
-    position: absolute;
-    width: 100vw;
+    position: relative;
     border-radius: 0;
     left: 0;
     bottom: 0;
