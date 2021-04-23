@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 *, *:before, *:after {
@@ -17,13 +17,16 @@ body {
   background-image: linear-gradient(to bottom right, #272829, #07192b);
   margin: 0;
   background-repeat: no-repeat;
-  overflow: hidden;
+  background-size: cover;
 }
 
 h1 {
   text-transform: uppercase;
-  width: fit-content;
   margin-bottom: 0;
+}
+
+h2 {
+  letter-spacing: 1.5px;
 }
 
 #subheader {
@@ -111,17 +114,25 @@ p {
 }
 
 @media only screen and (max-width: 500px) {
+  html {
+    height: 100%;
+  }
+
   body {
     height: 100%;
-    overflow: scroll;
   }
 
   .container {
     position: static;
     transform: none;
+    height: 100%;
     width: content-box;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0 25px;
+  }
+
+  h1 {
+    font-size: 25px;
   }
 
   h1, h2 {
