@@ -1,6 +1,6 @@
 // import toggleButton from './toggleButton';
 
-let emailButton = document.querySelector(`#email`); 
+let emailButton = document.querySelector(`#email-button`); 
 
 const makeAppear = (elem) => {
      setTimeout(() => {

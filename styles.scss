@@ -91,14 +91,17 @@ p{
     margin-top: 25px;
 }
 
-.email-button{
+#email-button{
+    background-color: #2ade91;
+}
+
+.button{
     position: static;
     margin-top: 50px;
     text-decoration: none;
     color: #272829;
     font-family: 'Russo One', sans-serif;
     max-width:max-content;
-    background-color: #2ade91;
     padding: 20px;
     border-radius: 25px;
 }
@@ -125,6 +128,10 @@ footer{
     text-align: center;
     bottom:10px;
 }
+
+/* .nav-link{
+    margin-top: 25px;
+} */
 
 
 /************************************************ responsive design **************************/
@@ -167,7 +174,7 @@ footer{
         margin-top: 30px;
     }
 
-    .email-button{
+    .button{
         position: relative;
         border-radius: 0;
         left: 0;
@@ -176,3 +183,6 @@ footer{
         text-align: center;
     }
 }
+
+
+
