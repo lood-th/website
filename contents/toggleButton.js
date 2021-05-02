@@ -1,4 +1,4 @@
-class toggleButton{
+export class toggleButton{
     constructor(){
         this.switchedOn = false;
         this.label = document.createElement("label");
@@ -16,5 +16,4 @@ class toggleButton{
     }
 }
 
-export default toggleButton;
 // TODO: the whole magic, css 

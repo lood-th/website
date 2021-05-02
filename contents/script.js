@@ -1,4 +1,4 @@
-import toggleButton from './toggleButton';
+// import toggleButton from './toggleButton';
 
 let emailButton = document.querySelector(`#email`); 
 
@@ -11,11 +11,11 @@ const makeAppear = (elem) => {
 
 makeAppear(emailButton);
 
-let weatherDisplay = document.querySelector('#weather-display');
+/* let weatherDisplay = document.querySelector('#weather-display');
 fetch('')
 .then(response => {
     weatherDisplay.innerHTML = `<p>${response}</p>`;
 })
 .catch(
     err => {weatherDisplay.innerHTML = `<p>${err}</p>`;}
-);
+); */
