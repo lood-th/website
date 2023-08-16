@@ -60,7 +60,7 @@ p {
     opacity: 1;
   }
 }
-.container {
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,9 +101,11 @@ p {
   border: solid 1px #2ade91;
 }
 
-.buttons{
+.buttons-container{
   display: flex;
+  display: -moz-flex;
   justify-content: space-between;
+  -moz-justify-content: space-between;
   margin-top: 50px;
 }
 
@@ -149,7 +151,7 @@ footer {
     height: 100%;
   }
 
-  .container {
+  .main-container {
     position: static;
     transform: none;
     height: 100%;
@@ -177,6 +179,14 @@ footer {
     margin-top: 30px;
   }
 
+  .buttons-container{
+    display: flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -moz-flex-direction: column;
+    margin-top: 2rem;
+  }
+
   .button {
     position: relative;
     border-radius: 0;
@@ -184,6 +194,11 @@ footer {
     bottom: 0;
     min-width: 100%;
     text-align: center;
+    margin-top: 1rem;
+  }
+
+  .button:nth-child(1){
+    margin-top: 0;
   }
 }
 
