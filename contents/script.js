@@ -1,21 +1,16 @@
-// import toggleButton from './toggleButton';
+const buttons = Array.from(document.getElementsByClassName(`button`)); 
 
-let emailButton = document.querySelector(`#email-button`); 
+console.log(buttons);
 
-const makeAppear = (elem) => {
-     setTimeout(() => {
-        elem.classList.add(`vis`);
-     }, 500);
+const makeAppear = (arr) => {
+    arr.forEach(elem => {
+        setTimeout(() => {
+            elem.classList.add(`vis`);
+         }, 500);
+    });
+     
  
 }
 
-makeAppear(emailButton);
+makeAppear(buttons);
 
-/* let weatherDisplay = document.querySelector('#weather-display');
-fetch('')
-.then(response => {
-    weatherDisplay.innerHTML = `<p>${response}</p>`;
-})
-.catch(
-    err => {weatherDisplay.innerHTML = `<p>${err}</p>`;}
-); */
